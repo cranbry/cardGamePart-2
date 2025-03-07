@@ -101,6 +101,7 @@ foreach (Card card in player4)
     Console.WriteLine($"{card.Rank} of {card.Suit}");
 }
 // Testing methods:
+// Shuffle method:
 Console.WriteLine("Testing Shuffle Method:");
 // new deck for shuffle testing because other one is empty by now
 Deck shuffleDeck = new Deck();
@@ -113,9 +114,24 @@ for (int i = 0; i < 5 && i < shuffleDeck.Cards.Count; i++)
 
 shuffleDeck.Shuffle();
 
-Console.WriteLine("\nFirst 5 cards after shuffle:");
+Console.WriteLine("First 5 cards after shuffle:");
 for (int i = 0; i < 5 && i < shuffleDeck.Cards.Count; i++)
 {
     Console.WriteLine($"{i + 1}. {shuffleDeck.Cards[i].Rank} of {shuffleDeck.Cards[i].Suit}");
 }
 
+// Cut method:
+Console.WriteLine("Testing Cut Method");
+Console.WriteLine("First 5 cards before cut:");
+for (int i = 0; i < 5 && i < deck.Cards.Count; i++)
+{
+    Console.WriteLine($"{i + 1}. {deck.Cards[i].Rank} of {deck.Cards[i].Suit}");
+}
+
+int Cutindex = deck.Cards.Count / 2;
+deck.Cut(Cutindex);
+Console.WriteLine($"First 5 cards after cutting at position {Cutindex}:");
+for (int i = 0; i < 5 && i < deck.Cards.Count; i++)
+{
+    Console.WriteLine($"{i + 1}. {deck.Cards[i].Rank} of {deck.Cards[i].Suit}");
+}
