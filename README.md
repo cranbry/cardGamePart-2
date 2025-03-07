@@ -15,3 +15,7 @@ Screenshot from testing BankAccount class:
   -- Creating new BankAccount: --
 
 <img width="368" alt="Screenshot 2025-03-06 at 11 33 39 PM" src="https://github.com/user-attachments/assets/6c41ccd9-9921-411c-8b09-7cf8028013ca" />
+
+  -- Testing deposit method: --
+  
+<img width="242" alt="Screenshot 2025-03-06 at 11 36 19 PM" src="https://github.com/user-attachments/assets/ae39cc5e-9ca7-48b0-9e30-9f6c7c34aaba" />
