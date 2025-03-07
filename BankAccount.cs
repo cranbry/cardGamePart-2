@@ -10,7 +10,17 @@ public class BankAccount
     private List<string> transactions;
     
     // Constructor -- empty for now
-    public BankAccount(string customerName, decimal initialBalance) { }
+    public BankAccount(string customerName, decimal initialBalance) 
+    {
+        // geneating account ID by randomizing it, customername, balance..
+        this.accountId = "ACC" + new Random().Next(10000, 99999);
+        this.customerName = customerName;
+        this.balance = initialBalance;
+        this.transactions = new List<string>();
+        
+        // recording initial transaction
+        this.transactions.Add($"Initial deposit: ${initialBalance}");
+    }
 
     // Properties
     public string AccountId 
@@ -48,7 +58,7 @@ public class BankAccount
         return true;
     }
 
-    // Withdrawl method
+    // Withdraw method
     public bool Withdraw(decimal amount)
     {
         // error checking
@@ -67,6 +77,7 @@ public class BankAccount
         transactions.Add($"Withdrawal: ${amount}");
         return true;
     }
+    
 }
         
 
