@@ -54,6 +54,8 @@ player4.Add(deck.TakeTopCard());
 player2.Add(deck.TakeTopCard());
 player3.Add(deck.TakeTopCard());
 
+Console.WriteLine($"After dealing cards, deck has {deck.Cards.Count} cards remaining");
+
 // flip all the cards over
 foreach (Card card in player1)
 {
