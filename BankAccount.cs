@@ -36,14 +36,51 @@ public class BankAccount
     // Deposit method
     public bool Deposit(decimal amount)
     {
+        // error checking
         if (amount <= 0)
         {
             return false;
         }
 
+        // updating balance and adding to transaction history:
         balance += amount;
         transactions.Add($"Deposit: ${amount}");
         return true;
     }
+
+    // Withdrawl method
+    public bool Withdraw(decimal amount)
+    {
+        // error checking
+        if (amount <= 0)
+        {
+            return false;
+        }
+        // checking for enough money
+        if (amount > balance)
+        {
+            return false;
+        }
+
+        // updating balance and adding to transaction history:
+        balance -= amount;
+        transactions.Add($"Withdrawal: ${amount}");
+        return true;
+    }
+}
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 }
