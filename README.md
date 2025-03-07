@@ -23,3 +23,7 @@ Screenshot from testing BankAccount class:
   -- Testing withdraw method: --
 
 <img width="225" alt="Screenshot 2025-03-06 at 11 43 54 PM" src="https://github.com/user-attachments/assets/91c39a39-b3a6-4c19-8087-ef9d7ad1b5ca" />
+
+  -- Testing withdraw method if not enough funds: --
+
+<img width="294" alt="Screenshot 2025-03-06 at 11 49 44 PM" src="https://github.com/user-attachments/assets/a2fc3517-3405-43e2-86e6-21e122f777d6" />
