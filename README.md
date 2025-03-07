@@ -19,3 +19,7 @@ Screenshot from testing BankAccount class:
   -- Testing deposit method: --
   
 <img width="242" alt="Screenshot 2025-03-06 at 11 36 19 PM" src="https://github.com/user-attachments/assets/ae39cc5e-9ca7-48b0-9e30-9f6c7c34aaba" />
+
+  -- Testing withdraw method: --
+
+<img width="225" alt="Screenshot 2025-03-06 at 11 43 54 PM" src="https://github.com/user-attachments/assets/91c39a39-b3a6-4c19-8087-ef9d7ad1b5ca" />
