@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 public class Deck
 {
-
+    List<Card> cards = new List<Card>();
     //Deck Constructor
     public Deck()
     {
@@ -15,7 +15,9 @@ public class Deck
         {
             foreach (Rank rank in Enum.GetValues(typeof(Rank)))
             {
-
+                // create new card and add to back
+                Card newCard = new Card(suit, rank);
+                cards.Add(newCard);
             }
         }
     }
@@ -30,9 +32,20 @@ public class Deck
     }
 
     //Takes top card from deck (if deck is not empty, otherwise return null)
-    public Card TakeTopCard()
+   public Card TakeTopCard()
     {
-
+        if (cards.Count == 0)
+        {
+            return null;
+        }
+        else
+        {
+            // take top card
+            Card topCard = cards[0];
+            // remove it from deck
+            cards.RemoveAt(0);
+            return topCard;
+        }
     }
 
     //Shuffle Method
