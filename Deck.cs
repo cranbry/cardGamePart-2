@@ -75,8 +75,18 @@ public class Deck
 
     //Cut method
     public void Cut(int index)
-    {
-        //implementation
+    {    
+        // checking for invalid index
+        if (index <= 0 || index >= cards.Count)
+        {
+            return;
+        }
+        // storing the cut portion in topPortion.
+        List<Card> topPortion = cards.GetRange(0, index);
+        // deleting the portion
+        cards.RemoveRange(0, index);
+        // adding the portion back to the back
+        cards.AddRange(topPortion);
     }
 }
 
