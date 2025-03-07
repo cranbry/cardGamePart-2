@@ -27,3 +27,8 @@ Screenshot from testing BankAccount class:
   -- Testing withdraw method if not enough funds: --
 
 <img width="294" alt="Screenshot 2025-03-06 at 11 49 44 PM" src="https://github.com/user-attachments/assets/a2fc3517-3405-43e2-86e6-21e122f777d6" />
+
+  -- Testing transaction history: --
+
+<img width="214" alt="Screenshot 2025-03-06 at 11 54 13 PM" src="https://github.com/user-attachments/assets/aeac4fba-adf2-4907-a361-ec07e7d7fa0b" />
+
