@@ -10,6 +10,7 @@ string input;
 List<string> allInput = new List<string>();
 
 // taking input until empty space is entered
+Console.WriteLine("Enter empty space to start game:");
 while ((input = Console.ReadLine()!) != "")
 {
     // adding each input to the list.
@@ -21,10 +22,11 @@ while ((input = Console.ReadLine()!) != "")
 // {
 //     Console.WriteLine(item);
 // }
-
+Console.WriteLine("Game Card Tests:");
 // declare a deck variables and create a deck object
 // DON'T SHUFFLE THE DECK
 Deck deck = new Deck();
+Console.WriteLine($"New deck created with {deck.Cards.Count} cards");
 
 // creating lists for each of the players to store cards
 List<Card> player1 = new List<Card>();
