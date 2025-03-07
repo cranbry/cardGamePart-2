@@ -36,10 +36,28 @@ public class Deck
     }
 
     //Shuffle Method
-    public void Shuffle()
+     public void Shuffle()
     {
-        
- 
+        // random number generator:
+        Random rndmCard = new Random();
+
+        // list to hold shuffeled deck:
+        List<Card> suffeledDeck = new List<Card>();
+
+        while (cards.Count > 0)
+        {
+            // taking random card from the original deck
+            int rndmIndex = rndmCard.Next(cards.Count);
+
+            // taking the random card and adding it to the shuffeled deck
+            Card selectedCard = cards[rndmIndex];
+            shuffeledDeck.Add(selectedCard);
+
+            // removing that random card from the original deck
+            cards.RemoveAt(rndmIndex);
+
+        }
+
     }
 
     //Cut method
