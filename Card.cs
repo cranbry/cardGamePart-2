@@ -14,7 +14,12 @@ public class Card
     //check the help documentation for the fields
 
     //Card Constructor
-
+    public Card(Suit suit, Rank rank)
+    {
+        this.suit = suit;
+        this.rank = rank;
+        this.faceUp = false; // making cards start face down by default
+    }
 
     //Define properties for all above fields
     //code example: public Suit Suit { get { return suit; } }
