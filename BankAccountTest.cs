@@ -29,6 +29,20 @@ class Program
         Console.WriteLine($"Withdrawal successful: {withdrawResult}");
         // printing new balance after withdraw
         Console.WriteLine($"New balance: ${account.Balance}");
+
+        // Testing if not enough funds
+        Console.WriteLine("Testing if not enough funds to withdraw");
+        // withdrawing $2000 when balance is only $1300
+        withdrawResult = account.Withdraw(2000.00m);
+        // returned value true if successful or false if not:
+        Console.WriteLine($"Withdrawal successful: {withdrawResult}");
+        // printing new balance after withdraw
+        Console.WriteLine($"Balance unchanged: ${account.Balance}");
+
+
+
+
+        
         
     }
 }
