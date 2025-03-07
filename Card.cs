@@ -23,6 +23,21 @@ public class Card
 
     //Define properties for all above fields
     //code example: public Suit Suit { get { return suit; } }
+    public Suit Suit {
+        get {
+            return suit;
+        }
+    }
+    public Rank Rank {
+        get {
+            return suit;
+        }
+    }
+    public bool faceUp {
+        get {
+            return faceUp;
+        }
+    }
 
     public void FlipOver()
     {
