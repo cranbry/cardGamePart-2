@@ -12,13 +12,23 @@ class Program
         Console.WriteLine($"AccountID is: {account.AccountId}");
         Console.WriteLine($"Account balance is: {account.Balance}");
 
-        // testing deposit method
+        // Test deposit
         Console.WriteLine("Testing deposit:");
         // depositing $500 into account
         bool depositResult = account.Deposit(500.00m);
-        // returned value true or false:
+        // returned value true if successful or false if not:
         Console.WriteLine($"Deposit successful: {depositResult}");
-        // printing new balance
+        // printing new balance after deposit
         Console.WriteLine($"New balance: ${account.Balance}");
+
+        // Test withdraw
+        Console.WriteLine("Testing withdrawal:");
+        // withdrawing $200 from account
+        bool withdrawResult = account.Withdraw(200.00m);
+        // returned value true if successful or false if not:
+        Console.WriteLine($"Withdrawal successful: {withdrawResult}");
+        // printing new balance after withdraw
+        Console.WriteLine($"New balance: ${account.Balance}");
+        
     }
 }
