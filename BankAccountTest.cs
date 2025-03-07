@@ -39,10 +39,13 @@ class Program
         // printing new balance after withdraw
         Console.WriteLine($"Balance unchanged: ${account.Balance}");
 
-
-
-
-        
+        // Showing transaction history
+        Console.WriteLine("Transaction history:");
+        // looping through each transaction string in account.transaction 
+        foreach (string transaction in account.Transactions)
+        {
+            Console.WriteLine("- " + transaction);
+        }
         
     }
 }
