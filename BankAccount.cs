@@ -33,4 +33,17 @@ public class BankAccount
         get { return transactions; } 
     }
 
+    // Deposit method
+    public bool Deposit(decimal amount)
+    {
+        if (amount <= 0)
+        {
+            return false;
+        }
+
+        balance += amount;
+        transactions.Add($"Deposit: ${amount}");
+        return true;
+    }
+
 }
