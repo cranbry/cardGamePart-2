@@ -8,4 +8,29 @@ public class BankAccount
     private string customerName;
     private decimal balance;
     private List<string> transactions;
+    
+    // Constructor -- empty for now
+    public BankAccount(string customerName, decimal initialBalance) { }
+
+    // Properties
+    public string AccountId 
+    { 
+        get { return accountId; } 
+    }
+
+    public string CustomerName 
+    { 
+        get { return customerName; } 
+    }
+
+    public decimal Balance 
+    { 
+        get { return balance; } 
+    }
+
+    public List<string> Transactions 
+    { 
+        get { return transactions; } 
+    }
+
 }
