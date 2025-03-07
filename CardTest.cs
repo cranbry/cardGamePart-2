@@ -100,3 +100,22 @@ foreach (Card card in player4)
 {
     Console.WriteLine($"{card.Rank} of {card.Suit}");
 }
+// Testing methods:
+Console.WriteLine("Testing Shuffle Method:");
+// new deck for shuffle testing because other one is empty by now
+Deck shuffleDeck = new Deck();
+
+Console.WriteLine("First 5 cards before shuffle:");
+for (int i = 0; i < 5 && i < shuffleDeck.Cards.Count; i++)
+{
+    Console.WriteLine($"{i + 1}. {shuffleDeck.Cards[i].Rank} of {shuffleDeck.Cards[i].Suit}");
+}
+
+shuffleDeck.Shuffle();
+
+Console.WriteLine("\nFirst 5 cards after shuffle:");
+for (int i = 0; i < 5 && i < shuffleDeck.Cards.Count; i++)
+{
+    Console.WriteLine($"{i + 1}. {shuffleDeck.Cards[i].Rank} of {shuffleDeck.Cards[i].Suit}");
+}
+
