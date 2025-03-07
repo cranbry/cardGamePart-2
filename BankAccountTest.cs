@@ -11,5 +11,14 @@ class Program
         Console.WriteLine($"Account name holder is: {account.CustomerName}");
         Console.WriteLine($"AccountID is: {account.AccountId}");
         Console.WriteLine($"Account balance is: {account.Balance}");
+
+        // testing deposit method
+        Console.WriteLine("Testing deposit:");
+        // depositing $500 into account
+        bool depositResult = account.Deposit(500.00m);
+        // returned value true or false:
+        Console.WriteLine($"Deposit successful: {depositResult}");
+        // printing new balance
+        Console.WriteLine($"New balance: ${account.Balance}");
     }
 }
