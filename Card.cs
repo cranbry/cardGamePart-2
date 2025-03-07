@@ -41,13 +41,15 @@ public class Card
 
     public void FlipOver()
     {
-        if (!faceUp)
+        // if face down then face up
+        if (faceUp == false)
         {
-            
+            faceUp = true;
         }
+        // if face up then down
         else
         {
-            
+            faceUp = false;
         }
     }
 
